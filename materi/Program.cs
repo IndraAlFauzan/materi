@@ -34,6 +34,7 @@ namespace materi
             rumus.input();
             rumus.prosesdata();
             rumus.tampilData();
+            rumus.tampilData();
 
             Console.ReadKey();
         }
