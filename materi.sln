@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "materi", "materi\materi.csproj", "{792BA36A-8492-4B5E-A85D-AB6D1399F65D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "materi", "materi\materi.csproj", "{792BA36A-8492-4B5E-A85D-AB6D1399F65D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
