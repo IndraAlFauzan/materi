@@ -2,41 +2,77 @@
 
 namespace materi
 {
-
-    class Rumus
+    
+    class Rerata
     {
-        //deklarasi variable
-        private double panjang, lebar, luas;
-  
-        public void input()
+        //deklarasi parameter
+        double nilaiMTK, nilaiFisika, nilaiKimia, nilaiBiologi, rerata;
+        
+        public void inputData()
         {
-            Console.Write("Masukan Panjang: ");
-            panjang = Convert.ToDouble(Console.ReadLine());
+            //proses input data
+            Console.Write("Masukan nilai Matematika = ");
+            //convert data
+            nilaiMTK = Convert.ToDouble(Console.ReadLine());
 
-            Console.Write("Masukan Lebar: ");
-            lebar = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Masukan nilai Fisika = ");
+            nilaiFisika = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Masukan nilai Kimia = ");
+            nilaiKimia = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Masukan nilai Biologi = ");
+            nilaiBiologi = Convert.ToDouble(Console.ReadLine());
         }
 
-        public void prosesdata()
+        //method function
+        public double rumus()
         {
-            luas =  panjang * lebar;
+            //rumus rerata
+            rerata = (nilaiMTK + nilaiKimia + nilaiFisika + nilaiBiologi) / 4;
+            return rerata;
         }
-        public void tampilData()
+
+        //materi utama
+        public void output()
         {
-            Console.WriteLine("Panjang={0} Lebar = {1} luas = {2}", panjang, lebar, luas);
+            //decision making dengan operator
+            if (rumus() >= 80)
+            {
+
+                Console.WriteLine("Nilai rerata = "+rumus());
+                Console.WriteLine("ANDA MENDAPATKAN NILAI A");
+            }
+            else if(rumus() < 80 && rumus() >= 70)
+            {
+                Console.WriteLine("Nilai rerata = " + rumus());
+                Console.WriteLine("ANDA MENDAPATKAN NILAI B");
+            }
+
+            else if (rumus() < 70 && rumus() >= 60)
+            {
+                Console.WriteLine("Nilai rerata = " + rumus());
+                Console.WriteLine("ANDA MENDAPATKAN NILAI C");
+            }
+            else
+            {
+                    Console.WriteLine("Nilai rerata = " + rumus());
+                    Console.WriteLine("ANDA MENDAPATKAN NILAI D");
+
+            }
         }
     }
     class Program
     {
         static void Main(string[] args)
         {
-            Rumus rumus = new Rumus();
-            rumus.input();
-            rumus.prosesdata();
-            rumus.tampilData();
-            rumus.tampilData();
+            Rerata index = new Rerata();
+            index.inputData();
+            index.rumus();
+            index.output();
 
-            Console.ReadKey();
+            Console.ReadLine();
+          
         }
     }
 }
