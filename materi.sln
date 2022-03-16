@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "materi", "materi\materi.csproj", "{792BA36A-8492-4B5E-A85D-AB6D1399F65D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "switchcase", "switchcase\switchcase.csproj", "{C662201D-D863-47B7-9342-B36F255A0921}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{792BA36A-8492-4B5E-A85D-AB6D1399F65D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{792BA36A-8492-4B5E-A85D-AB6D1399F65D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{792BA36A-8492-4B5E-A85D-AB6D1399F65D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C662201D-D863-47B7-9342-B36F255A0921}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C662201D-D863-47B7-9342-B36F255A0921}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C662201D-D863-47B7-9342-B36F255A0921}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C662201D-D863-47B7-9342-B36F255A0921}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
